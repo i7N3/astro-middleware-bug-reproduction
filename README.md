@@ -1,3 +1,5 @@
+**Issue:** https://github.com/withastro/astro/issues/7280
+
 # Astro Starter Kit: Minimal
 
 ```
