@@ -1,4 +1,5 @@
-**Issue:** https://github.com/withastro/astro/issues/7280
+**Issue:** https://github.com/withastro/astro/issues/7484
+**Mentioned:** https://github.com/withastro/astro/issues/7280
 
 # Astro Starter Kit: Minimal
 
