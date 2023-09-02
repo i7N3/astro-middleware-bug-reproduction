@@ -1,10 +1,18 @@
 import { defineMiddleware, sequence } from 'astro/middleware';
 
-export const middleware = defineMiddleware((context, next) => {
+export const middleware = defineMiddleware(async (context, next) => {
+    console.log('pathname: ', context.url.pathname);
+
     if (context.url.pathname.includes('/login')) {
-        context.cookies.set('jid', '<TOKEN>');
-        return context.redirect('/dashboard');
+        return new Response(null, {
+            status: 301,
+            headers: {
+                Location: '/dashboard',
+                'Set-Cookie': 'jid=HelloWorld; Path=/;',
+            },
+        });
     }
+
     return next();
 });
 

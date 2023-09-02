@@ -1,5 +1,5 @@
 {
-    "name": "",
+    "name": "astro-middleware-bug",
     "type": "module",
     "version": "0.0.1",
     "scripts": {
@@ -10,7 +10,7 @@
         "astro": "astro"
     },
     "dependencies": {
-        "@astrojs/node": "5.2.0",
-        "astro": "2.6.1"
+        "@astrojs/node": "6.0.0",
+        "astro": "3.0.7"
     }
 }
