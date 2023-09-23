@@ -1,6 +1,8 @@
 ---
-const jid = Astro.cookies.get('jid').value;
+const acc = Astro.cookies.get('acc')?.value;
+const jid = Astro.cookies.get('jid')?.value;
 // Should not be empty after context.redirect
 ---
 
-<h1>JID: {jid}</h1>
+<h1>acc: {acc}</h1>
+<h1>jid: {jid}</h1>
